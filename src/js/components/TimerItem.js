@@ -30,6 +30,17 @@ const TimerItem = ({onClose, onStart, onStop, onTitleToggle, started, title, dis
             </a>
             <div className="list-group-item-heading timer-title">
                 {titleOrInput()}
+                <div role="separator" className="divider"></div>
+                <div className="timer-content">
+                    <textarea className="form-control" rows="3">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet tortor id ligula vulputate volutpat.
+                    </textarea>
+                </div>
+            </div>
+            <div className="timer-options">
+                <button className="btn btn-link btn-sm">
+                    <span className="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
+                </button>
             </div>
             <div className="timer-stats">
                 <span className="timer-current">{displayDuration}</span> / <span className="timer-planned">{plannedTime}</span>

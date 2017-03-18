@@ -12,7 +12,7 @@
 
     &-row {
         display: flex;
-        align-items: center;
+        align-items: baseline;
     }
 
     &-stats {
@@ -39,6 +39,10 @@
 
     &-title {
         flex-grow: 1;
+    }
+
+    &-options {
+        margin: 0 15px 0 20px;
     }
 }
 
